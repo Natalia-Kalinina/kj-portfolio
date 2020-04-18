@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    background-image: url(img/kj.jpg);
+}
+.team-section {
+    height: 100vh;
+    display: flex;
+}
+.person {
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    transition: .6s;
+}
+.person:hover {
+    flex: 2;
+}
+.person-pic {
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    filter: grayscale(80%);
+    transition: .3s;
+}
+.person:hover .person-pic {
+    filter: grayscale(0);
+}
+.person-info {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(29, 77, 77, 0.5);
+    background-size: 100%;
+    opacity: 0;
+    transition: .2s;
+}
+.person:hover .person-info {
+    opacity: 1;
+    transition-delay: .6s;
+}
+.person-info h2 {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    padding-top: 15px;
+}
+.person-info p {
+    color: rgb(255, 255, 255);
+    font-style: italic;   
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+.social-media {
+    padding-bottom: 15px;
+}
+.social-media a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    color: rgb(6, 40, 41);
+    background-color: azure;
+    line-height: 40px;
+    border-radius: 50%;
+}
